@@ -1,0 +1,83 @@
+body.fondo {
+  background-image: url(IMAGENES/fondo.jfif); 
+  background-size: 40%;             
+  background-position: center;        /* Centrada */
+}
+body{
+    background-color: #504AC6;
+    
+}
+p {
+  color: white;
+}
+a{
+    color: black;
+}
+ul{
+    color: #CDCAFD;
+    font-size: 130%;
+}
+ .rectangulo {
+      width: 150px;             
+      height: 800px;          
+      background-color: #CDCAFD; 
+      border: 2px solid black;  
+      margin-top: 0%;
+      margin-left: 80%;
+    }
+h1{
+      font-size: 100%;
+}
+.rec{
+      width: 400px;             
+      height: 350px;          
+      background-color: #504AC6;   
+      margin-left: 33%;
+    }
+.rec1{
+        width: 200px;             
+      height: 35px;          
+      background-color: white;   
+      margin-left: 26%;
+      border-radius: 50%;
+}
+.texto{
+    font-size: 45px;
+    margin-left: 6%;
+}
+.is{
+    color: #504AC6;
+    margin-left: 22%;
+    font-size: 141%;
+    position: relative;
+    top: 3px;
+}
+.r{
+    color: white;
+    font-size: 121%;
+    margin-left: 21%;
+    position: relative;
+    top: 64px;
+}
+
+.buscando {
+    width: 600px;               
+    height: 30px;              
+    border-radius: 20px;       
+    background-color: #CDCAFD;  
+    padding: 10px;          
+    font-size: 16px;            
+    color: grey; 
+    margin-top: -60%;              
+  }
+  .rec3{
+    width: 300px;               
+    height: 30px;              
+    border-radius: 20px;       
+    background-color: #CDCAFD;  
+    padding: 10px;          
+    font-size: 16px;            
+    color: grey; 
+    margin-top: -60%;    
+    margin-left: 72%;
+  }
