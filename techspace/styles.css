@@ -10,8 +10,8 @@ body{
 .icono1{
     width: auto;
     height: 50px;
-    padding-left: 50px;
-    padding-right: 0px
+    padding-left: 762px;
+    padding-right: 0px;
 }
 
 .icono2{
@@ -65,24 +65,24 @@ h1{
 }
 
 .rec1{
-      width: 200px;             
+      width: 250px;             
       height: 35px;          
       background-color: white;   
       margin-left: 26%;
-      border-style: ;
+      border-style:  0; 
       border-radius: 15%;
       
 }
 
 .texto{
-    font-size: 45px;
+    font-size: 40px;
     margin-left: 6%;
 }
 
 .is{
     color: #504AC6;
     margin-left: 22%;
-    font-size: 141%;
+    font-size: 135%;
     position: relative;
     top: 3px;
 }
@@ -90,9 +90,9 @@ h1{
 .r{
     color: white;
     font-size: 121%;
-    margin-left: 21%;
+    margin-left: 13%;
     position: relative;
-    top: 64px;
+    top: 20px;
 }
 
 .buscando {
@@ -108,7 +108,7 @@ h1{
 }
 
 .rec3{
-    width: 300px;               
+    width: 300px;
     height: 50px;              
     border-radius: 20px;       
     background-color: #CDCAFD;         
@@ -140,13 +140,247 @@ h1{
 
 .perfil{
   font-size: 50px;
-  padding-left: 550px;
   padding-bottom: 150px;
   margin: 0px;
+  float: center;
 }
 .divv{
   width: 33%;
+  float: right;
 }
 .ims{
   width: 200;
+  float: left;
+}
+.rec6{
+   width: 380px;             
+      height: 558px;          
+      background-color: #CDCAFD;   
+      margin-left: 35%;
+      font-size: 20px;
+      font-family: Palanquin Dark;
+}
+.cuenta{
+    font-size: 37px;
+    margin-left: 26%;
+    color: black;
+}
+.correo{
+    width: 330px;               
+    height: 5px;              
+    border-radius: 20px;       
+    background-color: white;  
+    padding: 10px;          
+    font-size: 16px;            
+    color: grey;
+    padding-top: 20px;
+    position: relative;   
+    left: 3%; 
+}
+.gmail{
+    font-size: 19px;
+    margin-left: 4%;
+    color: black;
+}
+.numero{
+    font-size: 19px;
+    margin-left: 4%;
+    color: black;
+}
+.nro{
+      width: 330px;               
+    height: 5px;              
+    border-radius: 20px;       
+    background-color: white;  
+    padding: 10px;          
+    font-size: 16px;            
+    color: grey;
+    padding-top: 20px;
+    position: relative;   
+    left: 3%; 
+}
+.nombre{
+      font-size: 19px;
+    margin-left: 4%;
+    color: black;
+}
+.contraseña{
+      font-size: 19px;
+    margin-left: 4%;
+    color: black;
+}
+.nom{
+        width: 330px;               
+    height: 5px;              
+    border-radius: 20px;       
+    background-color: white;  
+    padding: 10px;          
+    font-size: 16px;            
+    color: grey;
+    padding-top: 20px;
+    position: relative;   
+    left: 3%; 
+}
+.contra{
+        width: 330px;               
+    height: 5px;              
+    border-radius: 20px;       
+    background-color: white;  
+    padding: 10px;          
+    font-size: 16px;            
+    color: grey;
+    padding-top: 20px;
+    position: relative;   
+    left: 3%; 
+}
+.rec7{
+  width: 164px;             
+      height: 35px;          
+      background-color: #504AC6 ;   
+      margin-left: 0%;
+      border-radius: 20px;
+}
+.atras{
+    font-size: 23px;
+    color: wheat;
+    margin-left: 26px;
+}
+.at{
+  color: white;
+  text-decoration: none;
+}
+.rec8{
+    width: 164px;             
+      height: 35px;          
+      background-color: #504AC6 ;   
+      margin-left: 85%;
+      border-radius: 20px;
+      margin-top: -2%;
+}
+.siguiente{
+  font-size: 23px;
+  color: wheat;
+  margin-left: 26px;
+}
+.sig{
+    color: white;
+  text-decoration: none;
+}
+.rec9{
+   width: 380px;             
+      height: 276px;          
+      background-color: #CDCAFD;   
+      margin-left: 35%;
+      font-size: 20px;
+      font-family: Palanquin Dark;
+}
+.rec10{
+
+      width: 164px;             
+      height: 35px;          
+      background-color: #504AC6 ;   
+      margin-left: 0%;
+      border-radius: 20px;
+}
+.rec11{
+      width: 164px;             
+      height: 35px;          
+      background-color: #504AC6 ;   
+      margin-left: 43%;
+      border-radius: 20px;
+      margin-top: -7%;
+
+}
+.foto{
+      width: 164px;             
+      height: 35px;   
+      color: black;
+}
+.ifoto{
+      font-size: 19px;
+    margin-left: 4%;
+    color: black;
+}
+.fondoaccesorio{
+  background: url(IMAGENES/fondoaccesorios.png);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+h3{
+  font-size: 300%;
+  color: white;
+}
+.acc{
+    width: 330px;               
+    height: 5px;                  
+    background-color: white;  
+    padding: 10px;          
+    font-size: 16px;            
+    color: grey;
+    padding-top: 20px;
+    position: relative;   
+    left: 3%;
+    top: 40%;
+    border-radius: 20px ;
+}
+.card-producto{
+    display: grid;
+  grid-template-columns: auto auto;
+  background-color: #CDCAFD;
+  border: 1px black solid;
+  margin: 10px;
+}
+
+.Dispositivos{
+  color: black; 
+  font-size: 20px;
+  border-radius: 20%;
+  border-color: none;
+  background-color: #CDCAFD;
+  width: 150px;
+  height: 40px;
+}
+.Usos{
+  color: black; 
+  font-size: 20px;
+  border-radius: 20%;
+  border-color: none;
+  background-color: #CDCAFD;
+  width: 150px;
+  height: 40px;
+}
+.Marcas{
+  color: black; 
+  font-size: 20px;
+  border-radius: 20%;
+  border-color: none;
+  background-color: #CDCAFD;
+  width: 150px;
+  height: 40px;
+}
+
+.div1{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.card-producto p{
+  color: black;
+  font-size: 20px;
+}
+.card-producto img{
+  width: 80%;
+}
+.logotech{grid-area: logotech;}
+.logos{grid-area: logos;}
+.logosmenu{grid-area: logosmyp;}
+.parrafoprincipal{grid-area: parrafoprincipal;}
+.grid-conteiner{
+  display: grid;
+  grid-template-areas: 
+  'logotech logos  logosmyp'
+  'parrafoprincipal  parrafoprincipal parrafoprincipal';
+}
+.logos{
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
