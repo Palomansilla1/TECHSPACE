@@ -1,0 +1,40 @@
+body.fondo {
+  background-image: url(IMAGENES/fondo.jfif); 
+  background-size: 40%;             
+  background-position: center;        /* Centrada */
+}
+body{
+    background-color: #504AC6;
+    
+}
+.iconos{
+    width: auto;
+    height: 50px;
+    margin: 50px;
+}
+p {
+  color: white;
+}
+a{
+    color: black;
+}
+ul{
+    color: #CDCAFD;
+    font-size: 130%;
+    border: 1px solid rgb(224, 223, 245); 
+    background-color: #CDCAFD; 
+    color: black;
+}
+.icono1{
+    width: auto;
+    height: 50px;
+    padding-left: 762px;
+    padding-right: 0px;
+}
+
+.icono2{
+    width: auto;
+    height: 50px;
+    padding-left: 0px;
+    padding-right: 50px
+}
