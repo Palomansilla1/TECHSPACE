@@ -1,7 +1,19 @@
+@font-face {
+    font-family: 'Palanquin Dark';
+    src: url('fonts/PalanquinDark-Regular.woff2') format('woff2'),
+         url('fonts/PalanquinDark-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body.fondo {
   background-image: url(IMAGENES/fondo.jfif); 
   background-size: 100%;             
   background-position: center;        /* Centrada */
+}
+body.fondorec{
+  background-color: #504AC6;
+
 }
 body{
     background-color: #504AC6;
@@ -56,7 +68,7 @@ h1{
       background-color: white;   
       margin-left: 20%;
       border-style:  0; 
-      border-radius: 15%;
+      border-radius: 15px;
       
 }
 
@@ -121,6 +133,15 @@ h1{
     margin: none;
 }
 
+.icono1{
+    width: auto;
+    height: 50px;
+    padding-left: 508px;
+    padding-right: 0px;
+    top: 0%;
+    right: 8%;
+}
+
 .menú{
   z-index: 2;
   width: 5px;
@@ -131,6 +152,7 @@ h1{
   background-color: #504AC6;
   width: 40px !important;
   height: 40px;
+  margin-left: -37px;
 }
 
 .menuboton{
@@ -138,6 +160,7 @@ h1{
   border-color: #504AC6;
   width: auto;
   height: auto;
+
 }
 
 .menu-nav{
@@ -148,9 +171,11 @@ h1{
   color: black;
   list-style: none;
   display: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  right: 15px;
 }
-
-.pmenú{
+  
+  .pmenú{
   color: black;
   font-size: 20px;
   font-weight: bold;
@@ -216,7 +241,7 @@ h1{
     color: black;
 }
 .nro{
-      width: 330px;               
+    width: 330px;               
     height: 5px;              
     border-radius: 20px;       
     background-color: white;  
@@ -228,17 +253,17 @@ h1{
     left: 3%; 
 }
 .nombre{
-      font-size: 19px;
+    font-size: 19px;
     margin-left: 4%;
     color: black;
 }
 .contraseña{
-      font-size: 19px;
+    font-size: 19px;
     margin-left: 4%;
     color: black;
 }
 .nom{
-        width: 330px;               
+    width: 330px;               
     height: 5px;              
     border-radius: 20px;       
     background-color: white;  
@@ -250,7 +275,7 @@ h1{
     left: 3%; 
 }
 .contra{
-        width: 330px;               
+    width: 330px;               
     height: 5px;              
     border-radius: 20px;       
     background-color: white;  
@@ -263,15 +288,15 @@ h1{
 }
 .rec7{
   width: 164px;             
-      height: 35px;          
-      background-color: #504AC6 ;   
-      margin-left: 0%;
-      border-radius: 20px;
+  height: 35px;          
+  background-color: #504AC6 ;   
+  margin-left: 0%;
+  border-radius: 20px;
 }
 .atras{
-    font-size: 23px;
-    color: wheat;
-    margin-left: 26px;
+  font-size: 23px;
+  color: wheat;
+  margin-left: 26px;
 }
 .at{
   color: white;
@@ -354,7 +379,7 @@ h3{
 .Dispositivos{
   color: black; 
   font-size: 20px;
-  border-radius: 20%;
+  border-radius: 12px;
   border-color: none;
   background-color: #CDCAFD;
   width: 150px;
@@ -363,7 +388,7 @@ h3{
 .Usos{
   color: black; 
   font-size: 20px;
-  border-radius: 20%;
+  border-radius: 12px;
   border-color: none;
   background-color: #CDCAFD;
   width: 150px;
@@ -372,13 +397,23 @@ h3{
 .Marcas{
   color: black; 
   font-size: 20px;
-  border-radius: 20%;
+  border-radius: 12px;
   border-color: none;
   background-color: #CDCAFD;
   width: 150px;
   height: 40px;
 }
 
+.Presupuesto{
+  color: black; 
+  font-size: 20px;
+  border-radius: 12px;
+  border-color: none;
+  background-color: #CDCAFD;
+  width: 150px;
+  height: 40px;
+}
+  
 .div1{
   display: grid;
   grid-template-columns: auto auto;
@@ -393,7 +428,7 @@ h3{
 
 .logotech{grid-area: logotech;}
 .logosmenu{grid-area: logosmyp;}
-.parrafoprincipal{grid-area: parrafoprincipal;}
+.parrafoprincipal{grid-area: parrafoprincipal; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 .grid-conteiner{
   display: grid;
   grid-template-areas: 
@@ -442,6 +477,7 @@ h3{
   border: none;
   background-color: white;
   margin: 0%;
+  margin-top: -2%;
 }
 
 footer{
@@ -470,6 +506,8 @@ h2{
 }
 .v{
   color: gray;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 20px;
 }
 .np{
   width:  330px;               
@@ -509,5 +547,85 @@ h2{
 .l{
   display: grid;
   grid-template-columns: auto auto;
+}
+
+
+.f > * {
+  margin: 16px 0px; /* arriba/abajo fijo, izquierda/derecha auto */
+  width: 280px;
+}
+.ones{
+  font-size: 40px;
+  color: white;
+  margin-top: 10px;
+}
+.productos{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  font-size: 10%;
+  background-color:#CDCAFD;
+}
+.rec12{
+    width: 380px;             
+    height: 600px;          
+    background-color: #CDCAFD;   
+    margin-left: 35%;
+    font-size: 20px;
+    font-family: Palanquin Dark;
+
+}
+.h1rec{
+  margin-left: 35%;
+  float: center;
+  font-size: 25px;
+  margin-top: 15%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.euge{
+  margin: 4px;
+  width: 330px;               
+  height: 5px;              
+  border-radius: 20px;       
+  background-color: white;  
+  padding: 10px;          
+  font-size: 16px;            
+  color: grey;
+  padding-top: 20px;
+  position: relative;   
+  left: 3%; 
+}
+.feli{
+  font-size: 19px;
+  margin-left: 4%;
+  color: black;
+}
+
+.reclamos{
+  background-color: #504AC6;
+  width: 150px;
+  height: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+  margin-left: 115px;
+  margin-top: 30px;
+}
+
+.ap{
+  margin-left: 35px;
+  font-size: 26px;
+  color: white;
+  top: auto;
+  /* no funciona */
+}
+
+.nd{
+  font-size: 20px;
+  color: black;
+}
+.marco{
+  border: 2px black solid;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
 }
 

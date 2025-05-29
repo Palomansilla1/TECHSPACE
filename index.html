@@ -48,70 +48,83 @@
             </nav>
             </div>
         </div>
-            <div>
+        <form>
+            <div class="f">
                 <select name="Dispositivo" class="Dispositivos">
-                <option value="Tipo de dispositivo">Dispositivos</option>
-                <option value="Celulares">Celulares</option>
-                <option value="Computadoras">Computadoras</option>
-                <option value="Tablets">Tablets</option>
-            </select>
-            <select name="Usos" class="Usos">
-                <option value="Usos">Usos</option>
-                <option value="Gaming">Gaming</option>
-                <option value="Programación">Programación</option>
-                <option value="Estudio">Estudio</option>
-                <option value="Trabajo / Oficina">Trabajo / Oficina</option>
-            <option value="Creación de contenido">Creación de contenido</option>
-            <option value="Fotografía">Fotografía</option>
-            <option value="Edición de video">Edición de video</option>
-            <option value="Uso diario / general">Uso diario / general</option>
-            <option value="Seguridad (hogar o personal)">Seguridad (hogar o personal)</option>
-            <option value="Entretenimiento">Entretenimiento</option>
-            <option value="Reuniones virtuales / clases online">Reuniones virtuales / clases online</option>
-            <option value="Consumo / Multimedia">Consumo / Multimedia</option>
-        </select>
-        <select name="Marcas" class="Marcas">
-            <option value="Marcas">Marcas</option>
-            <option value="Samsung">Samsung</option>
-            <option value="Lenovo">Lenovo</option>
-            <option value="iPhone">iPhone</option>
-            <option value="DELL">DELL</option>
-            <option value="Motorola">Motorola</option>
-            <option value="Xiaomi">Xiaomi</option>
-            <option value="Huawei">Huawei</option>
-            <option value="Oppo">Oppo</option>
-            <option value="Realme">Realme</option>
-            <option value="Vivo">Vivo</option>
-            <option value="OnePlus">OnePlus</option>
-            <option value="Google (Pixel)">Google (Pixel)</option>
-            <option value="Nokia">Nokia</option>
-            <option value="ZTE">ZTE</option>
-            <option value="Infinix">Infinix</option>
-            <option value="Tecno Mobile">Tecno Mobile</option>
-            <option value="HP (Hewlett-Packard)">HP (Hewlett-Packard)</option>
-            <option value="ZTE">ZTE</option>
-            <option value="Asus">Asus</option>
-            <option value="Acer">Acer</option>
-            <option value="MSI">MSI</option>
-            <option value="Razer">Razer</option>
-            <option value="Microsoft">Microsoft</option>
-            <option value="Chuwi">Chuwi</option>
-            <option value="Gateway">Gateway</option>
-            <option value="Toshiba">Toshiba</option>
-            <option value="Alienware">Alienware</option>
-            <option value="Framework">Framework</option>
-            <option value="XPG">XPG</option>
-            <option value="Amazon">Amazon</option>
-            <option value="Sony">Sony</option>
-            <option value="JBL">JBL</option>
-            <option value="Sony">Sony</option>
-            <option value="Sony">Sony</option>
-            <option value="Sony">Sony</option>
-            <option value="Sony">Sony</option>
-        </select>
-            <label>Presupuesto</label>
-            <input type="range" name="presupuesto" value="$500.000" min="$0" max="$1.000.000" class="Presupuesto">
+                    <option value="Tipo de dispositivo">Dispositivos</option>
+                    <option value="Celulares">Celulares</option>
+                    <option value="Computadoras">Computadoras</option>
+                    <option value="Tablets">Tablets</option>
+                </select>
+                <select name="Usos" class="Usos">
+                    <option value="Usos">Usos</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Programación">Programación</option>
+                    <option value="Estudio">Estudio</option>
+                    <option value="Trabajo / Oficina">Trabajo / Oficina</option>
+                    <option value="Creación de contenido">Creación de contenido</option>
+                    <option value="Fotografía">Fotografía</option>
+                    <option value="Edición de video">Edición de video</option>
+                    <option value="Uso diario / general">Uso diario / general</option>
+                    <option value="Seguridad (hogar o personal)">Seguridad (hogar o personal)</option>
+                    <option value="Entretenimiento">Entretenimiento</option>
+                    <option value="Reuniones virtuales / clases online">Reuniones virtuales / clases online</option>
+                    <option value="Consumo / Multimedia">Consumo / Multimedia</option>
+                </select>
+                <select name="Marcas" class="Marcas" onclick="filtrarProductos(Dispositivo.value,Usos.value,this.value,Presupuesto.value)">
+                    <option value="Marcas">Marcas</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="iPhone">iPhone</option>
+                    <option value="DELL">DELL</option>
+                    <option value="Motorola">Motorola</option>
+                    <option value="Xiaomi">Xiaomi</option>
+                    <option value="Huawei">Huawei</option>
+                    <option value="Oppo">Oppo</option>
+                    <option value="Realme">Realme</option>
+                    <option value="Vivo">Vivo</option>
+                    <option value="OnePlus">OnePlus</option>
+                    <option value="Google (Pixel)">Google (Pixel)</option>
+                    <option value="Nokia">Nokia</option>
+                    <option value="ZTE">ZTE</option>
+                    <option value="Infinix">Infinix</option>
+                    <option value="Tecno Mobile">Tecno Mobile</option>
+                    <option value="HP (Hewlett-Packard)">HP (Hewlett-Packard)</option>
+                    <option value="ZTE">ZTE</option>
+                    <option value="Asus">Asus</option>
+                    <option value="Acer">Acer</option>
+                    <option value="MSI">MSI</option>
+                    <option value="Razer">Razer</option>
+                    <option value="Microsoft">Microsoft</option>
+                    <option value="Chuwi">Chuwi</option>
+                    <option value="Gateway">Gateway</option>
+                    <option value="Toshiba">Toshiba</option>
+                    <option value="Alienware">Alienware</option>
+                    <option value="Framework">Framework</option>
+                    <option value="XPG">XPG</option>
+                    <option value="Amazon">Amazon</option>
+                    <option value="Sony">Sony</option>
+                    <option value="JBL">JBL</option>
+                    <option value="Sony">Sony</option>
+                </select>
+                <select name="Presupuesto" class="Presupuesto">
+                    <option value="Presupuesto">Presupuesto</option>
+                    <option value="$100.000 – $200.000">$100.000 – $200.000</option>
+                    <option value="$200.000 – $400.000">$200.000 – $400.000</option>
+                    <option value="$400.000 – $700.000">$400.000 – $700.000</option>
+                    <option value="$700.000 – $1.500.000+">$700.000 – $1.500.000+</option>
+                    <option value="$1.600.000 – $3.000.000+">$1.600.000 – $3.000.000+</option>
+                </select>
+            </form>
+                <div class="Filtros">
+                <nav class="entas" placeholder="Ventas">
+                    <a href="Venta.html" class="v" >Ventas</a>
+                </nav>
+            </nav>
+            </div>
+
         </div>
+        <h2 class="ones">Recomendaciones</h2>
         <hr class="linea2">
 
         <div class="productos" id="contenedor-productos">

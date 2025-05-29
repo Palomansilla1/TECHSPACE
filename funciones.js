@@ -69,11 +69,6 @@ function cargarPerfil() {
     document.getElementById("usuario-usuario").innerText = localStorage.getItem("usuario");
     document.getElementById("telefono-usuario").innerText = localStorage.getItem("telefono");
     document.getElementById("email-usuario").innerText = localStorage.getItem("email");
-
-    let imagen = localStorage.getItem("imagen");
-    if (imagen) {
-        document.getElementById("imagen-usuario").src = imagen;
-    }
 }
 
 let esVisible=false
@@ -133,3 +128,17 @@ function entas() {
       document.getElementById("imagen-producto").src = imagen;
     }
   });
+
+  function reclamos(){
+    let usuario=document.getElementById("usuario").value;
+    let contraseña=document.getElementById("contraseña").value;
+    let email=document.getElementById("email").value;
+    let telefono=document.getElementById("telefono").value;
+    localStorage.setItem("usuario",usuario)
+    localStorage.setItem("contraseña",contraseña)
+    localStorage.setItem("email",email)
+    localStorage.setItem("telefono",telefono)
+
+    window.location.href="perfil.href"
+  }
+  

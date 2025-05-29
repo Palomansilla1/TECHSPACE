@@ -4,12 +4,11 @@
         <title>TECHSPACE</title>
         <link rel="stylesheet" href="styles.css" type="text/css">
         <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
-        <title>buscar</title>
         <meta charset="utf-8">
         <script type="text/javascript" src="funciones.js"></script>
         <script type="text/javascript" src="Productos.js"></script>
+        
     </HEAD>
-    
     <body>
         <header> 
             <div class="l">
@@ -28,13 +27,12 @@
                         </ul>
                     </nav>
                 </div> 
-
             </div>
         </header>
         
         <div class="registro">
             <div class="i">
-                <img id="imagen-usuario" src="" alt="Imagen de perfil" style="width: 150px; height: 150px; border-radius: 50%;">
+                <img id="imagen-usuario" src="IMAGENES/carachica.jpg" alt="Imagen de perfil" style="width: 150px; height: 150px; border-radius: 50%;">
 
             </div>
             <p class="nc">Nombre Completo: <span id="nombre-usuario"></span></p>
@@ -44,10 +42,17 @@
         </div>
         <button class="vender" type="button" onclick="vender()">Quiero agregar un producto</button>
         <hr class="linea"></hr>
-        <img id="imagen-producto" src="" alt="Imagen del producto" style="max-width: 300px;">
         <p>Producto: <span id="producto-nombre"></span></p>
         <p>Descripción: <span id="producto-info"></span></p>
-        <footer>
+        <hr class="linea">
+        <hr class="linea">
+        <h2>Reclamo</h2>
+        <p>Email del comprador: <span id="reclamo-email"></span></p>
+        <p>Usuario del vendedor: <span id="reclamo-usuario"></span></p>
+        <p>Producto reclamado: <span id="reclamo-producto"></span></p>
+        <p>Inconveniente: <span id="reclamo-inconveniente"></span></p>
+
+                <footer>
                 <h4 class="contactos">Contactos:</h4>
             <div class="logos">
                 <img src="IMAGENES/ig.png" alt="instagram">
@@ -55,5 +60,9 @@
                 <img src="IMAGENES/wh.png" alt="whatsapp">
             </div>
         </footer>
+        <script>
+  document.addEventListener("DOMContentLoaded", cargarPerfil);
+</script>
+
     </body>
-</html>       
+</html>
