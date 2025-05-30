@@ -50,13 +50,13 @@
         </div>
         <form>
             <div class="f">
-                <select name="Dispositivo" class="Dispositivos">
-                    <option value="Tipo de dispositivo">Dispositivos</option>
-                    <option value="Celulares">Celulares</option>
-                    <option value="Computadoras">Computadoras</option>
-                    <option value="Tablets">Tablets</option>
+                <select name="Dispositivo" class="Dispositivos" onchange="filtrarProductos(this.value,Usos.value,Marcas.value,Presupuesto.value)">
+                    <option value="Dispositivos">Dispositivos</option>
+                    <option value="Celular">Celular</option>
+                    <option value="Computadora">Computadora</option>
+                    <option value="Tablet">Tablet</option>
                 </select>
-                <select name="Usos" class="Usos">
+                <select name="Usos" class="Usos" onchange="filtrarProductos(Dispositivo.value,this.value,Marcas.value,Presupuesto.value)">
                     <option value="Usos">Usos</option>
                     <option value="Gaming">Gaming</option>
                     <option value="Programación">Programación</option>
@@ -71,11 +71,11 @@
                     <option value="Reuniones virtuales / clases online">Reuniones virtuales / clases online</option>
                     <option value="Consumo / Multimedia">Consumo / Multimedia</option>
                 </select>
-                <select name="Marcas" class="Marcas" onclick="filtrarProductos(Dispositivo.value,Usos.value,this.value,Presupuesto.value)">
+                <select name="Marcas" class="Marcas" onchange="filtrarProductos(Dispositivo.value,Usos.value,this.value,Presupuesto.value)">
                     <option value="Marcas">Marcas</option>
                     <option value="Samsung">Samsung</option>
                     <option value="Lenovo">Lenovo</option>
-                    <option value="iPhone">iPhone</option>
+                    <option value="Apple">Apple</option>
                     <option value="DELL">DELL</option>
                     <option value="Motorola">Motorola</option>
                     <option value="Xiaomi">Xiaomi</option>
@@ -116,12 +116,7 @@
                     <option value="$1.600.000 – $3.000.000+">$1.600.000 – $3.000.000+</option>
                 </select>
             </form>
-                <div class="Filtros">
-                <nav class="entas" placeholder="Ventas">
-                    <a href="Venta.html" class="v" >Ventas</a>
-                </nav>
-            </nav>
-            </div>
+                
 
         </div>
         <h2 class="ones">Recomendaciones</h2>
@@ -132,6 +127,19 @@
 
         <div id="detalle-producto" class="detalle" style="display:none;">
         </div>
+        <dialog class="modal" id="modal">
+            
+            <div>
+            <h3 id="titulo-producto" class="titulo-producto">Xiaomi Redmi Note 13 pro 5G</h3>
+            </div>
+            <div>
+                <img class="i" id="imagen-producto" src="IMAGENES/XiamoRedmiNote13pro5G.png">
+            </div>
+            <div>
+                <p id="info-producto" class="titulo-producto">Pantalla 6.67'' AMOLED FHD+ (120Hz, Dolby Vision), procesador Snapdragon 7s Gen 2, cámara principal de 200 MP con OIS, batería 5100 mAh con carga rápida de 67W, ideal para fotografía de alta resolución y uso intensivo diario, precio estimado: accesible dentro de la gama media.</p>
+            </div>
+            <button class="c" type="button" onclick="cerrarModal()">Cerrar</button>
+        </dialog>
           
         <footer>
             <h4 class="contactos">Contactos:</h4>

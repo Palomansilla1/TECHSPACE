@@ -206,12 +206,12 @@ h1{
   float: left;
 }
 .rec6{
-   width: 380px;             
-      height: 590px;          
-      background-color: #CDCAFD;   
-      margin-left: 35%;
-      font-size: 20px;
-      font-family: Palanquin Dark;
+  width: 380px;             
+  height: 650px;          
+  background-color: #CDCAFD;   
+  margin-left: 35%;
+  font-size: 20px;
+  font-family: Palanquin Dark;
 }
 .cuenta{
     font-size: 37px;
@@ -308,16 +308,24 @@ h1{
   margin-left: 26px;
 }
 .sig{
-    color: #504AC6;
-  text-decoration: none;
+  background-color: #504AC6;
+  width: 150px;
+  height: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+
 }
 .rec9{
-   width: 380px;             
-      height: 276px;          
-      background-color: #CDCAFD;   
-      margin-left: 35%;
-      font-size: 20px;
-      font-family: Palanquin Dark;
+  width: 380px;             
+  height: 276px;          
+  background-color: #CDCAFD;   
+  margin-left: 35%;
+  font-size: 20px;
+  font-family: Palanquin Dark;
 }
 .rec10{
 
@@ -558,6 +566,7 @@ h2{
   font-size: 40px;
   color: white;
   margin-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .productos{
   display: grid;
@@ -610,12 +619,16 @@ h2{
   margin-top: 30px;
 }
 
-.ap{
-  margin-left: 35px;
-  font-size: 26px;
+.aceptar{
+  background-color: #504AC6;
+  width: 150px;
+  height: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+  margin-left: 115px;
+  margin-top: 30px;
   color: white;
-  top: auto;
-  /* no funciona */
+  font-size: 25px;
 }
 
 .nd{
@@ -629,3 +642,43 @@ h2{
   padding: 10px;
 }
 
+.regisboton{
+  background-color: #504AC6;
+  width: 150px;
+  height: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+  margin-left: 115px;
+  margin-top: 8px;
+  color: white;
+  font-size: 25px;
+}
+
+.modal{
+  color: black;
+  background-color: #CDCAFD;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.c{
+  background-color: #504AC6;
+  width: 150px;
+  height: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 20px;
+  margin-left: 90px;
+  margin-top: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.titulo-producto{
+  color: black;
+  margin: 20px 10px 70px; 
+}
+.i{
+  width: 150px;
+}

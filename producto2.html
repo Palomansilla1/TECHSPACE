@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <HEAD class="encabezado">
+    <head>
         <title>TECHSPACE</title>
         <link rel="stylesheet" href="styles.css" type="text/css">
         <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet">
         <meta charset="utf-8">
         <script type="text/javascript" src="funciones.js"></script>
         <script type="text/javascript" src="Productos.js"></script>
-        
-    </HEAD>
+    </head>
+    
     <body>
-        <header> 
-            <div class="l">
-                <img src="IMAGENES/logo.png" alt="Logo">
+     <header class="grid-conteiner">
+            <img class="logoTech" src="IMAGENES/logo.png" alt="Logo">
+            <div class="logosmyp">
+                <nav >
+                    <a href="Venta.html">
+                        <img class="icono1" src="IMAGENES/logoperfil.png" alt="perfil">
+                    </a>
+                </nav>
                 <div class="menú">
                     <button type="button" class="menuboton" onclick="mostrarOcultar()"><img class="icono2" src="IMAGENES/logomenu.png" alt="menú"></button>
                     <nav>
-                        <ul class="menu-nav" id="menu-nav">
+                        <ul class="menu-nav" id="menu-nav" >
                             <li class="pmenú">MENÚ</li>
-                            <hr class="divisionmenu">
+                            <hr class="divisionmenu"> 
                             <li><a href="index.html">Inicio</a></li>
                             <li><a href="Venta.html">Venta</a></li>
                             <li></li><a href="accesorios.html">Accesorios</a></li>
@@ -26,39 +31,28 @@
                             <li></li><a href="perfil.html">Perfil</a></li>
                         </ul>
                     </nav>
-                </div> 
+                </div>
             </div>
         </header>
-        
-        <div class="registro">
-            <div class="i">
-                <img id="imagen-usuario" src="IMAGENES/carachica.jpg" alt="Imagen de perfil" style="width: 150px; height: 150px; border-radius: 50%;">
 
+        <div class="rec13">
+            <img src="IMAGENES/XiaomiRedmiNote13pro5G.png" alt="celular">
+            <div class="rec14">
+                
             </div>
-            <p class="nc">Nombre Completo: <span id="nombre-usuario"></span></p>
-            <p class="u">Usuario: <span id="usuario-usuario"></span></p>
-            <p class="ct">Contacto Telefónico: <span id="telefono-usuario"></span></p>
-            <p class="e">Email: <span id="email-usuario"></span></p>
         </div>
-        <button class="vender" type="button" onclick="vender()">Quiero agregar un producto</button>
-        <hr class="linea"></hr>
-        <p>Producto: <span id="producto-nombre"></span></p>
-        <p>Descripción: <span id="producto-info"></span></p>
-        <hr class="linea">
-        <hr class="linea">
         
+        <div>
+            <img src="">
 
-                <footer>
-                <h4 class="contactos">Contactos:</h4>
+        </div>
+
+        <footer>
+            <h4 class="contactos">Contactos:</h4>
             <div class="logos">
                 <img src="IMAGENES/ig.png" alt="instagram">
                 <img src="IMAGENES/x.png" alt="twitter">
                 <img src="IMAGENES/wh.png" alt="whatsapp">
             </div>
         </footer>
-        <script>
-  document.addEventListener("DOMContentLoaded", cargarPerfil);
-</script>
-
     </body>
-</html>

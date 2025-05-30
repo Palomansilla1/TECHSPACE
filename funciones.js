@@ -129,16 +129,7 @@ function entas() {
     }
   });
 
-  function reclamos(){
-    let usuario=document.getElementById("usuario").value;
-    let contraseña=document.getElementById("contraseña").value;
-    let email=document.getElementById("email").value;
-    let telefono=document.getElementById("telefono").value;
-    localStorage.setItem("usuario",usuario)
-    localStorage.setItem("contraseña",contraseña)
-    localStorage.setItem("email",email)
-    localStorage.setItem("telefono",telefono)
-
-    window.location.href="perfil.href"
+  function reclamos() {
+      alert("¡Gracias por su reclamo!");
+      window.location.href = "index.html";
   }
-  

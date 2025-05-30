@@ -312,25 +312,52 @@ const productos = [
 ];
 
 function mostrarProductos(listaProductos=productos){
-    let tarjetas;
+    let tarjetas="";
     listaProductos.forEach((p)=> {
+      console.log(p)
         tarjetas += `<div class="marco">
-                        <a href=""></a>
+                        <button type="button" onclick="mostrarModal()">
                         <img src="${p.imagen}" width="200" height="200"/>
+                        </button>
                         <p class="nd">${p.title}<p>
                      </div>`;
     });
 
     document.getElementById("contenedor-productos").innerHTML = tarjetas
 }
-function filtrarProductos(Dispositivo,Usos,Marcas,Presupuesto){
-  console.log(Dispositivo,Usos,Marcas,Presupuesto)
-  let listafiltrada ;
 
-  listafiltrada = productos.filter(producto => {producto.marca==Marcas});
+function filtrarProductos(Dispositivo,Usos,Marcas,Presupuesto){
+  console.log(Dispositivo,Usos,Marcas,Presupuesto);
+  let listafiltrada="";
+
+  if(Dispositivo=="Dispositivos" && Usos=="Usos" && Marcas=="Marcas" && Presupuesto!="Presupuesto"){
+
+  }else if(Dispositivo!="Dispositivos" && Usos=="Usos" && Marcas=="Marcas" && Presupuesto=="Presupuesto"){
+    listafiltrada = productos.filter(producto => producto.categoria==Dispositivo);
+  }else if(Dispositivo=="Dispositivos" && Usos!="Usos" && Marcas=="Marcas" && Presupuesto=="Presupuesto"){
+    listafiltrada = productos.filter(producto => producto.usos.includes(Usos));
+  }else if(Dispositivo=="Dispositivos" && Usos=="Usos" && Marcas!="Marcas" && Presupuesto=="Presupuesto"){
+    listafiltrada = productos.filter(producto => producto.marca==Marcas);
+  }else if(Dispositivo!="Dispositivos" && Usos!="Usos" && Marcas=="Marcas" && Presupuesto=="Presupuesto"){
+    listafiltrada = productos.filter(producto => producto.categoria==Dispositivo && producto.usos.includes(Usos));
+  }else if(Dispositivo!="Dispositivos" && Usos=="Usos" && Marcas!="Marcas" && Presupuesto=="Presupuesto"){
+    listafiltrada = productos.filter(producto => producto.categoria==Dispositivo && producto.marca==Marcas);
+  }else if(Dispositivo=="Dispositivos" && Usos!="Usos" && Marcas!="Marcas" && Presupuesto=="Presupuesto"){
+    listafiltrada = productos.filter(producto => producto.usos.includes(Usos) && producto.marca==Marcas);
+  }else if(Dispositivo!="Dispositivos" && Usos!="Usos" && Marcas!="Marcas" && Presupuesto=="Presupuesto"){
+    listafiltrada = productos.filter(producto => producto.categoria==Dispositivo &producto.usos.includes(Usos) && producto.marca==Marcas);
+  }
+
   mostrarProductos(listafiltrada)
 }
 
-/*preguntar undefined*/
-/*preguntar cómo conectar cada tarjeta a pág Producto*/
-/*terminar filtros*/
+function cerrarModal(){
+  document.getElementById("modal").close();
+}
+
+
+function mostrarModal(){
+  //document.getElementById("titulo-producto").innerHTML=titulo;
+  //document.getElementById("info-producto").innerHTML=descr;
+  document.getElementById("modal").showModal();
+}
